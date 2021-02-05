@@ -2,14 +2,14 @@ package instruments;
 
 public abstract class Instrument {
 
-    private String type;
     private String material;
     private String colour;
+    private String type;
 
     public Instrument(String type, String material, String colour) {
-        this.type = type;
         this.material = material;
         this.colour = colour;
+        this.type = type;
     }
 
     public String getType() {
