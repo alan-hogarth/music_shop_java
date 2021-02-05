@@ -53,7 +53,7 @@ public class Cello extends Instrument implements IPlay, ISell {
         return placeOfManufacture;
     }
 
-    public double getMarkUp(double buyPrice, double sellPrice){
+    public double getMarkUp(){
         return sellPrice -= buyPrice;
     }
 }

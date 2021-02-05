@@ -27,6 +27,6 @@ public class MicTest {
 
     @Test
     public void canGetMarkUp() {
-        assertEquals(14.0, mic.getMarkUp(mic.getBuyPrice(), mic.getSellPrice()), 0.0);
+        assertEquals(14.0, mic.getMarkUp(), 0.0);
     }
 }

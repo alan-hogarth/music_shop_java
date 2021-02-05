@@ -64,6 +64,6 @@ public class InstrumentTest {
 
     @Test
     public void canGetMarkUp() {
-        assertEquals(100.0, guitar.getMarkUp(guitar.getBuyPrice(), guitar.getSellPrice()), 0.0);
+        assertEquals(100.0, guitar.getMarkUp(), 0.0);
     }
 }

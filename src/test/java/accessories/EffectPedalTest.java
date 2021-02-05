@@ -27,6 +27,6 @@ public class EffectPedalTest {
 
     @Test
     public void canGetMarkUp() {
-        assertEquals(49.8, effectPedal.getMarkUp(effectPedal.getBuyPrice(), effectPedal.getSellPrice()), 0.0);
+        assertEquals(49.8, effectPedal.getMarkUp(), 0.0);
     }
 }

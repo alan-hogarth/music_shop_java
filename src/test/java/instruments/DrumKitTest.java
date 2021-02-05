@@ -65,6 +65,6 @@ public class DrumKitTest {
 
     @Test
     public void canGetMarkUp() {
-        assertEquals(2200.0, drumKit.getMarkUp(drumKit.getBuyPrice(), drumKit.getSellPrice()), 0.0);
+        assertEquals(2200.0, drumKit.getMarkUp(), 0.0);
     }
 }

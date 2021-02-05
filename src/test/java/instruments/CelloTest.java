@@ -58,7 +58,7 @@ public class CelloTest {
 
     @Test
     public void canGetMarkUp() {
-        assertEquals(1300.0, cello.getMarkUp(cello.getBuyPrice(), cello.getSellPrice()), 0.0);
+        assertEquals(1300.0, cello.getMarkUp(), 0.0);
     }
 
 }

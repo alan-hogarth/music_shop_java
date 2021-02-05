@@ -26,7 +26,7 @@ public class Mic implements ISell{
         this.sellPrice = sellPrice;
     }
 
-    public double getMarkUp(double buyPrice, double sellPrice){
+    public double getMarkUp(){
         return sellPrice -= buyPrice;
     }
 }
