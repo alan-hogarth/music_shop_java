@@ -1,6 +1,8 @@
 package instruments;
 
-public class DrumKit extends Instrument implements IPlay{
+import accessories.ISell;
+
+public class DrumKit extends Instrument implements IPlay, ISell {
 
     private int symbols;
     private boolean snare;
@@ -60,5 +62,9 @@ public class DrumKit extends Instrument implements IPlay{
 
     public void setSellPrice(double sellPrice) {
         this.sellPrice = sellPrice;
+    }
+
+    public double getMarkUp(double buyPrice, double sellPrice){
+        return sellPrice -= buyPrice;
     }
 }

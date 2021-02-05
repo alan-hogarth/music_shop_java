@@ -1,6 +1,8 @@
 package instruments;
 
-public class Cello extends Instrument implements IPlay{
+import accessories.ISell;
+
+public class Cello extends Instrument implements IPlay, ISell {
 
     private int stringNumber;
     private String placeOfManufacture;
@@ -51,5 +53,7 @@ public class Cello extends Instrument implements IPlay{
         return placeOfManufacture;
     }
 
-
+    public double getMarkUp(double buyPrice, double sellPrice){
+        return sellPrice -= buyPrice;
+    }
 }

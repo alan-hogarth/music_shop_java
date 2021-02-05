@@ -62,4 +62,8 @@ public class InstrumentTest {
         assertEquals("Twaaang", guitar.sound("Twaaang"));
     }
 
+    @Test
+    public void canGetMarkUp() {
+        assertEquals(100.0, guitar.getMarkUp(guitar.getBuyPrice(), guitar.getSellPrice()), 0.0);
+    }
 }

@@ -56,4 +56,9 @@ public class CelloTest {
         assertEquals("vzzvzvzvvz", cello.sound("vzzvzvzvvz"));
     }
 
+    @Test
+    public void canGetMarkUp() {
+        assertEquals(1300.0, cello.getMarkUp(cello.getBuyPrice(), cello.getSellPrice()), 0.0);
+    }
+
 }

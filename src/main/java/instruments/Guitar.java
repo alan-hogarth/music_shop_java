@@ -1,6 +1,8 @@
 package instruments;
 
-public class Guitar extends Instrument implements IPlay{
+import accessories.ISell;
+
+public class Guitar extends Instrument implements IPlay, ISell {
 
     private int stringNumber;
     private String guitarType;
@@ -49,5 +51,9 @@ public class Guitar extends Instrument implements IPlay{
 
     public void setSellPrice(double sellPrice) {
         this.sellPrice = sellPrice;
+    }
+
+    public double getMarkUp(double buyPrice, double sellPrice){
+        return sellPrice -= buyPrice;
     }
 }

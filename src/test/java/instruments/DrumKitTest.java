@@ -62,4 +62,9 @@ public class DrumKitTest {
         assertEquals("bang thud crash", drumKit.sound("bang thud crash"));
     }
 
+
+    @Test
+    public void canGetMarkUp() {
+        assertEquals(2200.0, drumKit.getMarkUp(drumKit.getBuyPrice(), drumKit.getSellPrice()), 0.0);
+    }
 }
