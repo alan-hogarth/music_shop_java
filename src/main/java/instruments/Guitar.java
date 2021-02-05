@@ -1,6 +1,6 @@
 package instruments;
 
-public class Guitar extends Instrument {
+public class Guitar extends Instrument implements IPlay{
 
     private int stringNumber;
     private String guitarType;
@@ -13,6 +13,10 @@ public class Guitar extends Instrument {
         this.guitarType = guitarType;
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
+    }
+
+    public String sound(String noise){
+        return noise;
     }
 
     public int getStringNumber() {

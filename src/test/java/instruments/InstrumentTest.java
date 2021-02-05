@@ -51,4 +51,15 @@ public class InstrumentTest {
         assertEquals(400.0, guitar.getSellPrice(), 0.0);
     }
 
+    @Test
+    public void canSetGuitarType(){
+        guitar.setGuitarType("electric");
+        assertEquals("electric", guitar.getGuitarType());
+    }
+
+    @Test
+    public void makesNoise(){
+        assertEquals("Twaaang", guitar.sound("Twaaang"));
+    }
+
 }
